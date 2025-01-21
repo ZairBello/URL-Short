@@ -47,9 +47,13 @@ const Navbar = () => {
         </div>
         <div className="gap-8 items-center text-gray-400 hidden md:flex">
           <a href="/login">Login</a>
-          <button className="bg-cyan-400 px-6 py-2 rounded-full text-white">
+          <motion.button
+            whileHover={{ scale: 1.1, backgroundColor: "#5edbdb" }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-cyan-400 px-6 py-2 rounded-full text-white"
+          >
             Sign Up
-          </button>
+          </motion.button>
         </div>
         {/* MOBIL VIEW */}
         <button
@@ -91,12 +95,14 @@ const Navbar = () => {
               <a href="/contact">Recources</a>
               <div className=" border-b-2 border-white opacity-15 w-full" />
               <a href="/login">Login</a>
-              <a
+              <motion.a
+                whileHover={{ scale: 1.2, backgroundColor: "#5edbdb" }}
+                whileTap={{ scale: 0.8 }}
                 href="/signup"
                 className="bg-cyan-400 w-full flex justify-center py-2 rounded-full"
               >
                 Sign Up
-              </a>
+              </motion.a>
             </motion.div>
           )}
         </AnimatePresence>
