@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex w-full justify-between items-center h-20 pr-6">
+      <div className="flex w-full justify-between items-center h-20 px-6 md:px-16 lg:px-36 xl:px-48">
         {/* DESKTOP VIEW */}
         <div className="flex">
           <img src={Logo} alt="Logo" className="w-24" />

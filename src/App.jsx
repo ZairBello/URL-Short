@@ -6,18 +6,18 @@ import UrlShoorting from "./components/urlshoorting";
 function App() {
   return (
     <>
-      <main className="bg-white h-screen w-full px-6 md:px-16 lg:px-36 xl:px-48 font-bold py-4 font-poppins">
+      <main className="bg-white">
         <Navbar />
         {/* FIRST PART THE WEB */}
-          {/* IMAGEN */}
-          <div className="flex justify-end">
-            <img
-              src={Imagen}
-              alt="Imagen de Fondo"
-              className="object-cover object-left h-80 w-full "
-            />
-          </div>
-        <section className="h-2/5">
+        {/* IMAGEN */}
+        <div className="flex justify-end pl-2">
+          <img
+            src={Imagen}
+            alt="Imagen de Fondo"
+            className="object-cover object-left h-80 w-full "
+          />
+        </div>
+        <section className="h-96 w-full px-6 md:px-16 lg:px-36 xl:px-48 font-bold py-4 font-poppins">
           {/* TEXT TO INFORMATION */}
           <div className="flex flex-col mt-8 gap-4">
             <h1 className="text-4xl font-bold text-center text-[#35323e]">
@@ -38,15 +38,13 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
         {/* URL SHORTING */}
-        <section className="">
-          <UrlShoorting />
+        <section className="bg-gradient-to-t from-gray-300 to-white to-50% from-50% h-full">
+            <UrlShoorting />
         </section>
         {/* SECOND PART */}
-        <section className="h-full bg-slate-700 min-h-screen">
-          
-        </section>
+        <section className="h-full bg-gray-300 min-h-screen"></section>
+      </main>
     </>
   );
 }
