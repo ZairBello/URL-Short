@@ -57,7 +57,7 @@ const UrlShortener = () => {
             onClick={handleShortenClick}
             className="px-12 py-2 text-lg font-bold text-white bg-cyan-400 rounded-full hover:bg-cyan-500 transition-transform transform hover:scale-105"
           >
-            ¡Acortar!
+            Shorten it!
           </button>
         </div>
         {error && <p className="text-red-500 mt-4">{error}</p>}

@@ -2,11 +2,12 @@ import Navbar from "./components/navbar";
 import Imagen from "./../public/images/illustration-working.svg";
 import { motion } from "motion/react";
 import UrlShoorting from "./components/urlshoorting";
+import AdvanceStatistic from "./components/advancestatistic";
 
 function App() {
   return (
     <>
-      <main className="bg-white">
+      <main className="bg-white font-poppins">
         <Navbar />
         {/* FIRST PART THE WEB */}
         {/* IMAGEN */}
@@ -17,7 +18,7 @@ function App() {
             className="object-cover object-left h-80 w-full "
           />
         </div>
-        <section className="h-96 w-full px-6 md:px-16 lg:px-36 xl:px-48 font-bold py-4 font-poppins">
+        <section className="h-96 w-full px-6 md:px-16 lg:px-36 xl:px-48 font-bold py-4 ">
           {/* TEXT TO INFORMATION */}
           <div className="flex flex-col mt-8 gap-4">
             <h1 className="text-4xl font-bold text-center text-[#35323e]">
@@ -43,7 +44,9 @@ function App() {
             <UrlShoorting />
         </section>
         {/* SECOND PART */}
-        <section className="h-full bg-gray-300 min-h-screen"></section>
+        <section className="h-full bg-gray-300 min-h-screen p-6 ">
+          <AdvanceStatistic />
+        </section>
       </main>
     </>
   );
