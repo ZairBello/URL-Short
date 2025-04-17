@@ -14,15 +14,15 @@ const AdvanceStatistic = () => {
         </p>
       </div>
       {/* LINE OF THE TIME */}
-      <div className="mt-10 ">
+      <div className="mt-10">
         {/* CHART 1 BRAND RECOGNITION */}
-        <div className="bg-white w-0 ">
+        <div className="bg-white w-full ">
             {/* DIV-IMAGE */}
             <div className="">
             </div>
             {/* DIV-TITLE */}
-            <div className="">
-                <h2 className="text-[1.5em] font-semibold text-center text-[#35323e]">
+            <div className="w-full">
+                <h2 className="text-[1.5em] font-semibold text-[#35323e]">
                     Brand Recognition
                 </h2>
             </div>
