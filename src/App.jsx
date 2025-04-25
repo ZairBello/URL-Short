@@ -41,12 +41,16 @@ function App() {
         </section>
         {/* URL SHORTING */}
         <section className="bg-gradient-to-t from-gray-300 to-white to-50% from-50% h-full">
-            <UrlShoorting />
+          <UrlShoorting />
         </section>
         {/* SECOND PART */}
         <section className="h-full bg-gray-300 min-h-screen p-6 ">
           <AdvanceStatistic />
         </section>
+        {/* FOOTERS */}
+        <footer className="bg-[#35323e] h-20 w-full flex justify-center items-center">
+          <p className="text-white text-lg font-bold">Created by Your Name</p>
+        </footer>
       </main>
     </>
   );
