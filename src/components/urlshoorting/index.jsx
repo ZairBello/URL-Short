@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const UrlShortener = () => {
   const [originalUrl, setOriginalUrl] = useState("");
@@ -71,13 +72,15 @@ const UrlShortener = () => {
             value={originalUrl}
             onChange={handleInputChange}
           />
-          <button
+          <motion.button
             onClick={handleShortenClick}
-            className="px-12 py-2 text-lg font-bold text-white bg-cyan-400 rounded-full hover:bg-cyan-500 transition-transform transform hover:scale-105"
+            whileHover={{ scale: 1.2, backgroundColor: "#5edbdb" }}
+            whileTap={{ scale: 0.8 }}
+            className="px-12 py-2 text-lg font-bold text-white bg-cyan-400 rounded-full"
             disabled={isLoading} // Desactiva el botón mientras carga
           >
             {isLoading ? "Cargando..." : "Shorten it!"}
-          </button>
+          </motion.button>
         </div>
         {error && <p className="text-red-500 mt-4">{error}</p>}
       </div>
